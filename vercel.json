@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      { "src": "/download/youtube", "dest": "/server.js" },
+      { "src": "/download/instagram", "dest": "/server.js" }
+    ]
+  }
+  
