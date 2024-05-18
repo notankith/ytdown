@@ -10,7 +10,7 @@
     "youtube-dl-exec": "^2.3.0",
     "axios": "^0.24.0",
     "binary-version-check": "^6.0.0",
-    "instagram-scraper": "^2.5.0",
+    "instagram-scraper": "*",
     "uuid": "^8.3.2"
   }
 }
