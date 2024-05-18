@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "youtube-dl": "*",
+    "youtube-dl-exec": "^2.3.0",
     "instagram-scraper": "^1.10.0"
   }
 }
