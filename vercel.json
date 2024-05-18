@@ -1,14 +1,19 @@
 {
-  "name": "video-downloader",
-  "version": "1.0.0",
-  "description": "Download YouTube videos and Instagram reels in 1080p",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "youtube-dl": "^4.0.1",
-    "instagram-scraper": "^1.10.0"
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/download/youtube",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/api/download/instagram",
+      "dest": "/server.js"
+    }
+  ]
 }
